@@ -57,8 +57,8 @@ This project analyzes a random user’s Spotify listening history to uncover pat
 * **[Tableau Public Link](https://public.tableau.com/app/profile/ameer.sulyans2376/viz/Spotify_History_Project/Dashboard)**
   Published interactive dashboard.
 
-* ![image alt](visuals/Tableau_visual/Tableau_Spotify_data_visualization.png)
-  Static image of the Tableau project (partial treemap view of top artists & songs).
+ ![image alt](visuals/Tableau_visual/Tableau_Spotify_data_visualization.png)
+  * Static image of the Tableau project (Image of treemap view of top artists & songs and partial view of treemap of listening trends dashboard).
 
 📌 **Key Tableau Insight**: The most played song was *Ode to the Mets* by **The Strokes**.
 
