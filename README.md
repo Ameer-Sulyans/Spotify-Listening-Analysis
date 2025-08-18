@@ -1,115 +1,108 @@
-# 🎶 Spotify Listening History Data Analytics Project
+# Spotify Data Analytics Project
 
-This project explores and analyzes my Spotify listening history using **Python (Jupyter Notebook)** and **Tableau**. The goal is to clean, process, and visualize listening patterns to uncover insights about my music habits.
+This project analyzes a random user’s Spotify listening history to uncover patterns in listening habits, platform usage, skipped tracks, and top artists/albums. The project includes **data cleaning, exploratory data analysis (EDA), visualizations in Python, and Tableau dashboards**.
 
 ---
 
 ## 📂 Project Structure
 
-```
-├── data/
-│   ├── spotify_data_dictionary Description.csv   # Data dictionary for spotify_history.csv
-│   ├── spotify_history.csv                       # Raw listening history dataset
-│   └── clean data/
-│       └── clean_Spotify_data.xlsx               # Cleaned dataset after preprocessing
-│
-├── jupyter_notebook/
-│   └── Spotify_history.ipynb                     # Python notebook for data cleaning & EDA
-│
-├── visuals/
-│   ├── Tableau_visual/
-│   │   ├── Spotify_History_Project.twb           # Tableau workbook with dashboards
-│   │   ├── Tableau_Spotify_data_visualization.png # Partial PNG preview of treemap
-│   │   └── Tableau Public Link:
-│   │       https://public.tableau.com/app/profile/ameer.sulyans2376/viz/Spotify_History_Project/Dashboard
-│   │
-│   └── python_visuals/                           # Visuals exported from Jupyter Notebook
-│       ├── Listening_Time_by_Hour_Heatmap.png
-│       ├── Most_skip_artist.png
-│       ├── Platform_Usage.png
-│       ├── Top_10_Albums_by_listening_time.png
-│       └── Top_Artists.png
-```
+### **Data Files**
+
+* **`data/spotify_data_dictionary Description.csv`**
+  Dictionary file that explains each column in the dataset.
+
+* **`data/spotify_history.csv`**
+  Raw dataset containing the user’s Spotify listening history.
+
+* **`data/clean data/clean_Spotify_data.xlsx`**
+  Cleaned version of `spotify_history.csv` after preprocessing in Jupyter Notebook.
 
 ---
 
-## 🔧 Methods & Workflow
+### **Jupyter Notebook**
 
-**Jupyter Notebook (Python):**
+* **`jupyter_notebook/Spotify_history.ipynb`**
+  Python notebook that includes:
 
-* Imported & explored the dataset (`spotify_history.csv`).
-* Cleaned data: handled missing values, converted timestamps, added new features (year, month, day, hour).
-* Converted `ms_played` into minutes/seconds.
-* Filtered out short plays (< 15s) to remove accidental clicks.
-* Performed **Exploratory Data Analysis (EDA):**
+  * Importing libraries and loading the dataset
+  * Data cleaning: handling missing values, converting timestamps, removing short plays (<15 seconds), etc.
+  * Feature engineering: extracting year, month, day, hour
+  * Converting `ms_played` to minutes/seconds
+  * Exploratory Data Analysis (EDA):
 
-  * Top artists & tracks by total minutes played
-  * Listening habits by hour of the day
-  * Platform usage (web, mobile, etc.)
-  * Skip behavior analysis
-  * Album listening trends
-* Visualizations created in Python:
+    * Top artists and tracks by total listening time
+    * Listening habits by hour
+    * Platform usage (Android, iOS, Web, etc.)
+    * Skipping behavior (songs/artists skipped most)
+    * Album listening trends
+  * Data visualizations in Python:
 
-  * **Bar Chart** – Top 10 Artists
-  * **Heatmap** – Listening by day & hour
-  * **Pie Chart** – Platform usage
-  * **Bar Chart** – Top skipped songs
-  * **Line Graph** – Album listening trends
+    * **Bar chart:** Top 10 artists
+    * **Heatmap:** Listening by day of week & hour
+    * **Pie chart:** Platform usage
+    * **Bar chart:** Most skipped songs
+    * **Line graph:** Album listening trends
+  * Exporting cleaned data
 
-**Tableau Project:**
+---
 
-* Built dashboards with:
+### **Tableau Visualizations**
+
+* **`visuals/Tableau_visual/Spotify_History_Project.twb`**
+  Tableau workbook containing:
 
   * Heatmap of listening trends
   * Treemap of top artists & songs
-* Tableau Public link: [Spotify History Dashboard](https://public.tableau.com/app/profile/ameer.sulyans2376/viz/Spotify_History_Project/Dashboard)
+
+* **[Tableau Public Link](https://public.tableau.com/app/profile/ameer.sulyans2376/viz/Spotify_History_Project/Dashboard)**
+  Published interactive dashboard.
+
+* **`visuals/Tableau_visual/Tableau_Spotify_data_visualization.png`**
+  Static image of the Tableau project (partial treemap view of top artists & songs).
+
+📌 **Key Tableau Insight**: The most played song was *Ode to the Mets* by **The Strokes**.
 
 ---
 
-## 📊 Key Insights
+### **Python Visualizations (PNG)**
 
-### From Python Visuals:
+All visuals generated in Jupyter Notebook, with key insights:
 
-* **Listening Time by Hour (Heatmap):**
-  Most listening happens around **6:00 PM** (1,378,579 seconds).
+1. **`visuals/python_visuals/Listening_Time_by_Hour_Heatmap.png`**
 
-* **Most Skipped Artist:**
-  The **Beatles** were skipped the most.
+   * 🔑 *Insight*: User listens most around **6:00 PM**, with a peak of **1,378,579 seconds** played.
 
-* **Platform Usage:**
-  **Android** was used significantly more than Windows, Web Player, iOS, or Cast to Device.
+2. **`visuals/python_visuals/Most_skip_artist.png`**
 
-* **Top 10 Albums by Listening Time:**
+   * 🔑 *Insight*: **The Beatles** were the most skipped artist.
 
-  * 🎵 *The New Abnormal* (The Strokes) was the most played album.
-  * 🎵 The Beatles followed as the second most played.
+3. **`visuals/python_visuals/Platform_Usage.png`**
 
-* **Top Artists:**
+   * 🔑 *Insight*: **Android** was used significantly more than Windows, Web Player, iOS, or Cast to Device.
 
-  * 🎤 The **Beatles** were the most listened-to artist.
-  * 🎤 The **Killers** were second.
+4. **`visuals/python_visuals/Top_10_Albums_by_listening_time.png`**
 
-### From Tableau:
+   * 🔑 *Insight*: *The New Abnormal* was the most listened album, followed by albums from **The Beatles**.
 
-* The **Top Artist & Song** was *"Ode to the Mets"* by The Strokes.
+5. **`visuals/python_visuals/Top_Artists.png`**
+
+   * 🔑 *Insight*: **The Beatles** were the top artist, followed by **The Killers**.
 
 ---
 
-## 📷 Sample Visualizations
+## 🚀 Key Insights
 
-**Listening Time by Hour (Python Heatmap):**
-![Listening Time Heatmap](visuals/python_visuals/Listening_Time_by_Hour_Heatmap.png)
-
-**Platform Usage (Python Pie Chart):**
-![Platform Usage](visuals/python_visuals/Platform_Usage.png)
-
-**Tableau Dashboard (Treemap & Heatmap):**
-![Tableau Visualization](visuals/Tableau_visual/Tableau_Spotify_data_visualization.png)
+* The user’s peak listening time was **6:00 PM**.
+* **Android** dominated platform usage.
+* **The Beatles** were both the **most listened** and **most skipped** artist.
+* **The New Abnormal** was the top album.
+* Tableau confirmed *Ode to the Mets* by **The Strokes** as the most played track.
 
 ---
 
-## 🚀 Tools & Technologies
+## 🛠️ Tools & Technologies
 
-* **Python (Pandas, Matplotlib, Seaborn, Numpy)**
-* **Jupyter Notebook**
-* **Tableau Public**
+* **Python (Pandas, Matplotlib, Seaborn)** – Data cleaning, analysis, and visualizations
+* **Jupyter Notebook** – Analysis workflow
+* **Excel** – Cleaned data export
+* **Tableau** – Interactive dashboards
