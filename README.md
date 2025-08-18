@@ -68,7 +68,7 @@ This project analyzes a random user’s Spotify listening history to uncover pat
 
 All visuals generated in Jupyter Notebook, with key insights:
 
-1. visuals/python_visuals/Listening_Time_by_Hour_Heatmap.png
+1.  **`visuals/python_visuals/Listening_Time_by_Hour_Heatmap.png`**
 
    * 🔑 *Insight*: User listens most around **6:00 PM**, with a peak of **1,378,579 seconds** played.
 
