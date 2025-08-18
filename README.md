@@ -69,22 +69,23 @@ This project analyzes a random user’s Spotify listening history to uncover pat
 All visuals generated in Jupyter Notebook, with key insights:
 
 1. **`visuals/python_visuals/Listening_Time_by_Hour_Heatmap.png`**
+   ![image alt](visuals/python_visuals/Listening_Time_by_Hour_Heatmap.png)
 
    * 🔑 *Insight*: User listens most around **6:00 PM**, with a peak of **1,378,579 seconds** played.
 
-2. **`visuals/python_visuals/Most_skip_artist.png`**
+3. **`visuals/python_visuals/Most_skip_artist.png`**
 
    * 🔑 *Insight*: **The Beatles** were the most skipped artist.
 
-3. **`visuals/python_visuals/Platform_Usage.png`**
+4. **`visuals/python_visuals/Platform_Usage.png`**
 
    * 🔑 *Insight*: **Android** was used significantly more than Windows, Web Player, iOS, or Cast to Device.
 
-4. **`visuals/python_visuals/Top_10_Albums_by_listening_time.png`**
+5. **`visuals/python_visuals/Top_10_Albums_by_listening_time.png`**
 
    * 🔑 *Insight*: *The New Abnormal* was the most listened album, followed by albums from **The Beatles**.
 
-5. **`visuals/python_visuals/Top_Artists.png`**
+6. **`visuals/python_visuals/Top_Artists.png`**
 
    * 🔑 *Insight*: **The Beatles** were the top artist, followed by **The Killers**.
 
